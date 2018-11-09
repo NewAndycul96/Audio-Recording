@@ -23,10 +23,16 @@
                                 <items>
                                     <barButtonItem title="record" image="recordButton" id="6PT-70-NkU">
                                         <connections>
-                                            <action selector="clickAudioRecord:" destination="BYZ-38-t0r" id="reb-8O-EOT"/>
+                                            <action selector="audioRecorder:" destination="BYZ-38-t0r" id="XnX-KB-MiS"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem title="play" image="playButton" landscapeImage="playButton" id="lgT-LK-4OU"/>
+                                    <barButtonItem title="pause" image="pauseButton" id="oBJ-Kt-Xef"/>
+                                    <barButtonItem title="stop" image="stopButton" id="7Tn-xh-QrQ">
+                                        <connections>
+                                            <action selector="finsihRecording:" destination="BYZ-38-t0r" id="Sck-eN-Yqz"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="I7v-4A-U8S"/>
@@ -42,16 +48,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <connections>
-                        <outlet property="playButton" destination="lgT-LK-4OU" id="RzM-Vh-dAk"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
     <resources>
+        <image name="pauseButton" width="18" height="22"/>
         <image name="playButton" width="23" height="24"/>
         <image name="recordButton" width="24" height="24"/>
+        <image name="stopButton" width="22" height="22"/>
     </resources>
 </document>
