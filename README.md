@@ -1,0 +1,2 @@
+# Audio-Recording
+This application provides experience working with recording and playing audio in iOS including the use of AVAudioSession (Links to an external site.)Links to an external site., AVAudioRecorder (Links to an external site.)Links to an external site., and AVAudioPlayer (Links to an external site.)Links to an external site.. It also provides experience managing UI state in a View Controller and working with FileManager (Links to an external site.)Links to an external site. and writing/reading data to/from the file system.
