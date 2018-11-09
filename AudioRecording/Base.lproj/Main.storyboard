@@ -17,12 +17,41 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Njf-0C-z4s">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem title="record" image="recordButton" id="6PT-70-NkU">
+                                        <connections>
+                                            <action selector="clickAudioRecord:" destination="BYZ-38-t0r" id="reb-8O-EOT"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="play" image="playButton" landscapeImage="playButton" id="lgT-LK-4OU"/>
+                                </items>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="I7v-4A-U8S"/>
+                                </connections>
+                            </toolbar>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Njf-0C-z4s" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="1qU-zf-EnR"/>
+                            <constraint firstItem="Njf-0C-z4s" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="603" id="BlE-AS-Nht"/>
+                            <constraint firstItem="Njf-0C-z4s" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="fhl-FB-mCe"/>
+                            <constraint firstItem="Njf-0C-z4s" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rPd-dl-vIK"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="playButton" destination="lgT-LK-4OU" id="RzM-Vh-dAk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="playButton" width="23" height="24"/>
+        <image name="recordButton" width="24" height="24"/>
+    </resources>
 </document>
